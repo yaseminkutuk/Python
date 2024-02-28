@@ -1,0 +1,53 @@
+1.
+print("Çarpma programı")
+
+a = int(input("Birinci Sayı:"))
+b = int(input("İkinci Sayı:"))
+c = int(input("Üçüncü Sayı:"))
+
+x = a * b * c
+print("Sonuç: {}".format(x))
+
+2.
+print("Beden Kitle İndeksinizi Bulun!")
+Kilo = int(input("Kilo(kg):"))
+Boy = float(input("Boy(m):"))
+
+BKI = float(Kilo/(Boy*Boy))
+print("Beden Kitle İndeksi: {}".format(BKI))
+
+3.
+miktar = float(input("Aracınız 1 kilometrede ne kadar yakıyor(₺):"))
+km = int(input("Kaç kilometre yol yapacaksınız?(km):"))
+para = float(miktar*km)
+
+print("Yakıt için ödemeniz gereken tutar: {} ₺".format(para))
+
+4.
+print("Lütfen bilgilerinizi giriniz.")
+Ad = input("Ad:")
+Soyad = input("Soyad:")
+Numara = input("Numara:")
+print("Bilgileriniz kaydediliyor...")
+
+Bilgiler = [Ad,Soyad,Numara]
+
+print("Ad:{}\nSoyad:{}\nNumara:{}".format(Bilgiler[0],Bilgiler[1],Bilgiler[2]))
+print("Bilgileriniz başarıyla kaydedilmiştir.")
+
+5.
+a = input("a:")
+b = input("b:")
+
+print("Değiştirilmeden önceki değerler\na:{}\nb:{}".format(a,b))
+a,b = b,a
+print("Değiştirildikten sonraki değerler\na:{}\nb:{}".format(a,b))
+
+6.
+print("Lütfen üçgenin kenar uzunluklarını giriniz.")
+a = int(input("Dik Kenar 1: "))
+b = int(input("Dik Kenar 2: "))
+
+c = (a**2 + b**2)**0.5
+
+print("Hipotenüs: {}".format(c))
